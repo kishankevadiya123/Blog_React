@@ -1,0 +1,233 @@
+* {
+    text-decoration: none !important;
+    /* font-family: 'Roboto', sans-serif !important; */
+    font-family: "Playfair Display", serif;
+    list-style: none;
+       box-sizing: content-box;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - -  Garage */
+
+.bg-lite {
+    background-color: #f4f4f4;
+}
+
+/* .box{
+    background-color: #fc3d5336;
+    border: dashed #fc3d54;
+} */
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.f-color {
+    color: #000000bb;
+    font-weight: 500 !important;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: calc(33.33333333% - 32px) !important;
+}
+
+.bor {
+    border-radius: 10px 10px 10px 10px !important;
+    overflow: hidden;
+}
+
+.details:hover {
+    color: #1B1A55 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-1 {
+    width: 450px;
+    border: 1px solid #7FC7D9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #7FC7D9;
+    padding: 30px;
+}
+.in-gov{
+    border:  2px solid #7FC7D9;
+}
+
+
+.button {
+    width: 20%;
+    background-color: black;
+    border-radius: 10px !important;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+Form span {
+    color: red;
+}
+
+.img-box {
+    cursor: pointer;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+img {
+    transition: all .5s ease-in-out;
+}
+
+.box:hover img {
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.box {
+    transition: all .5s ease-in-out;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 20px rgb(190, 190, 190) !important;
+    transition: all .5s ease-in-out;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.card-icon {
+    background-color: #f7f0f1;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    right: 20px;
+    padding: 12px;
+}
+
+.service {
+    background-color: #fc3d54;
+    color: white !important;
+    padding: 10px;
+}
+
+.service:hover {
+    background-color: #f04f61;
+    transition: all 0.3s ease-in-out;
+}
+
+.hov:hover {
+    color: #fc3d54 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.pos-sticky {
+    position: sticky;
+    z-index: 999;
+}
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - - - - -  - - - - - -    BLOG  - - - - - - - - - - - - - - */
+
+.blog-btn {
+    /* background-color: #DCF2F1; */
+    border: 1px solid #7FC7D9;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.blog-btn:hover {
+    background-color: #7FC7D9;
+    transition: all .5s ease-in-out;
+
+}
+
+/* after */
+.img {
+    height: 100% !important;
+    overflow: hidden;
+}
+.img:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    /* transform: skew(15deg) translateX(-50%); */
+    background-color: #0000001c;
+}
+
+.pos-ab{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: #080808;
+    font-weight: 900;
+}
+.fs-60{
+    font-size: 70px;
+}
+.for{
+    color: rgba(0, 0, 0, 0.404);
+}
+.bor-top{
+    border-top: 1px solid black;
+    width: 90%;
+}
+.bor-box{
+    border: 1px solid #ccccccdc;
+}
+.blog-box{
+    border: 1px solid #cccc;
+    padding: 80px;
+}
+.hov-blog{
+    transition: all 0.3s ease-in-out;
+}
+.hov-blog:hover {
+    color: #7FC7D9 !important;
+    transition: all 0.3s ease-in-out;
+}
+.submit{
+    background-color: #7FC7D9;
+}
+
+
+/* ----------------------- Loader protect----------------------------- */
+.loader {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate 1s linear infinite
+      }
+      .loader::before , .loader::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        inset: 0px;
+        border-radius: 50%;
+        border: 5px solid #FFF;
+        animation: prixClipFix 2s linear infinite ;
+      }
+      .loader::after{
+        inset: 8px;
+        transform: rotate3d(90, 90, 0, 180deg );
+        border-color: #FF3D00;
+      }
+
+      @keyframes rotate {
+        0%   {transform: rotate(0deg)}
+        100%   {transform: rotate(360deg)}
+      }
+
+      @keyframes prixClipFix {
+          0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+          50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+          75%, 100%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      }
