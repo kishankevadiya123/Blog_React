@@ -46,7 +46,7 @@ const Blog = () => {
         <div className="container-fluid mt-3 mb-5 position-relative d-block">
           <div className="row align-items-center">
             <div className="p-0 img">
-              <img width="100%" height="100%" src="https://static.wixstatic.com/media/baac51_d623fe1790ed419a89d20aa05f6064b2.jpg/v1/fill/w_1349,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/baac51_d623fe1790ed419a89d20aa05f6064b2.jpg" alt="" />
+              <img width="100%" height="100%" src="https://st2.depositphotos.com/4107269/9004/i/450/depositphotos_90042754-stock-photo-top-view-of-trendy-white.jpg" alt="" />
             </div>
           </div>
         </div>
